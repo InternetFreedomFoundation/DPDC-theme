@@ -1,0 +1,16 @@
+{
+  "name": "dpdc",
+  "version": "1.0.0",
+  "description": "DPDC Ghost Theme",
+  "keywords": ["ghost-theme", "internet-freedom-foundation"],
+  "author": {
+    "name":  "Internet Freedom Foundation",
+    "email": "tech@internetfreedom.in"
+  },
+  "engines": {
+    "ghost-api": "v4"
+  },
+  "config": {
+    "posts_per_page": 10
+  }
+}

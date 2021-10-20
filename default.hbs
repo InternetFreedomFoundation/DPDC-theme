@@ -11,17 +11,18 @@
 
 	    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/list.min.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/card.min.css">
-	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dropdown.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet">
 
 		<link rel="stylesheet" href="{{asset "css/style.css"}}">
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dropdown.min.js"></script>
-		
+
 		<script defer data-domain="internetfreedom.in" src="https://plausible.io/js/plausible.js"></script>
 		<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
@@ -35,29 +36,13 @@
 			<header>
 				<a class="logo" href="{{@site.url}}">
 					{{>logo}}
-					<svg class="logo-h"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 300 125"
-						version="1.1">
-						<use x="0" y="0" xlink:href="#icon"/>
-						<use x="146" y="22.5" xlink:href="#text"/>
-					</svg>
-					<svg class="logo-v"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 160 224"
-						version="1.1">
-						<use x="17.5" y="0" xlink:href="#icon"/>
-						<use x="5" y="144" xlink:href="#text"/>
-					</svg>
 					<div class="gap">&nbsp;</div>
-					<div class="toggle-menu">MENU</div>
+					<div class="toggle-menu">☰</div>
 				</a>
-				<div class="menu">
-					<nav class="primary">{{navigation}}</nav>
-		            <nav class="footer">{{> footer}}</nav>
-				</div>
+				<nav class="menu">
+					{{navigation}}
+					<button>Register with us</button>
+				</nav>
 			</header>
 			{{{body}}}
 		</div>

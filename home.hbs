@@ -1,14 +1,5 @@
 {{!< default}}
 
 <main>
-    {{#get "pages" slug="home" as |page|}}
-      {{#page}}
-      <div class="post-content">
-        {{content}}
-      </div>
-      {{/page}}
-    {{/get}}
-
-    {{> loop}}
-
+    {{>hero}}
 </main>

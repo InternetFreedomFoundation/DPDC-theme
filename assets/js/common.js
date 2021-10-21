@@ -1,18 +1,18 @@
 if (window.razorpayId) {
-	window.donate = function (amount) {
-		var promise = new Promise(function (resolve, reject) {
-			new Razorpay({
-				key: window.razorpayId,
-				amount: amount * 100,
-				name: window.razorpayName,
-				description: window.razorpayDescription,
-				handler: callback || window.onDonate
-			}).open();
-		});
+  window.donate = function (amount) {
+    var promise = new Promise(function (resolve, reject) {
+      new Razorpay({
+        key: window.razorpayId,
+        amount: amount * 100,
+        name: window.razorpayName,
+        description: window.razorpayDescription,
+        handler: callback || window.onDonate,
+      }).open();
+    });
 
-		if (window.onDonate) return promise.then(onDonate);
-		return promise;
-	}
+    if (window.onDonate) return promise.then(onDonate);
+    return promise;
+  };
 }
 
 /*
@@ -43,33 +43,34 @@ $.fn.formData = function () {
 	return data;
 } */
 
-$(function() {
-	// Toggle the menu when the logo is clicked on mobile
-	$('.logo').click(function (event) {
-		if($('.toggle-menu').css('display') !== 'none') {
-			$('.menu').toggleClass('show');
-			return false;
-		}
-	});
+$(function () {
+  // Toggle the menu when the logo is clicked on mobile
+  $('.logo').click(function (event) {
+    if ($('.toggle-menu').css('display') !== 'none') {
+      $('.menu').toggleClass('show');
+      return false;
+    }
+  });
 
-	// Fire change handlers on radio buttons that become deselected
-	$('input[type=radio]').change(function (event) {
-		if (!event.target.checked) return;
-		$('input[type=radio][name=' +
-			event.target.name + ']').each(function () {
-			if (this !== event.target) $(this).change();
-		});
-	});
+  // Fire change handlers on radio buttons that become deselected
+  $('input[type=radio]').change(function (event) {
+    if (!event.target.checked) return;
+    $('input[type=radio][name=' + event.target.name + ']').each(function () {
+      if (this !== event.target) $(this).change();
+    });
+  });
 
-	// Toggle element visibility on checkbox / radio button change
-	$('[data-toggle]').change(function (event) {
-		var toggle = event.target.getAttribute('data-toggle'),
-			state = event.target.checked;
+  // Toggle element visibility on checkbox / radio button change
+  $('[data-toggle]')
+    .change(function (event) {
+      var toggle = event.target.getAttribute('data-toggle'),
+        state = event.target.checked;
 
-		$('.if-' + toggle)[state ? 'addClass' : 'removeClass']('show');
-	}).change();
+      $('.if-' + toggle)[state ? 'addClass' : 'removeClass']('show');
+    })
+    .change();
 
-	/*
+  /*
 	// Submit forms over fetch(). Unused.
 	$('form.async').submit(function (event) {
 		var $form = $(this),

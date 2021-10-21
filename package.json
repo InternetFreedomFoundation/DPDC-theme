@@ -2,9 +2,12 @@
   "name": "dpdc",
   "version": "1.0.0",
   "description": "DPDC Ghost Theme",
-  "keywords": ["ghost-theme", "internet-freedom-foundation"],
+  "keywords": [
+    "ghost-theme",
+    "internet-freedom-foundation"
+  ],
   "author": {
-    "name":  "Internet Freedom Foundation",
+    "name": "Internet Freedom Foundation",
     "email": "tech@internetfreedom.in"
   },
   "engines": {
@@ -12,5 +15,31 @@
   },
   "config": {
     "posts_per_page": 10
+  },
+  "scripts": {
+    "dev": "gulp",
+    "dev-css": "gulp css",
+    "zip": "gulp zip",
+    "test": "gscan .",
+    "format": "prettier --write \"./**/*.{js,css,json}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json}\""
+  },
+  "dependencies": {
+    "autoprefixer": "6.3.6",
+    "cssnano": "3.7.1",
+    "gscan": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-filter": "5.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-postcss": "6.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-uglify": "3.0.1",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.3.8",
+    "gulp-zip": "4.0.0",
+    "postcss-color-function": "2.0.1",
+    "postcss-custom-properties": "5.0.1",
+    "postcss-easy-import": "1.0.1",
+    "prettier": "^2.4.1"
   }
 }

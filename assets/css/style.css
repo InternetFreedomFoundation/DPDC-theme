@@ -8,7 +8,7 @@
 
 /* 0: Normalize */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -295,7 +295,7 @@ a.button {
 }
 
 button.register-button {
-    min-width: 160px;
+  min-width: 160px;
 }
 
 input[type='button']:hover,
@@ -395,7 +395,8 @@ header {
   left: 0;
 }
 
-.toggle-menu, .close-menu {
+.toggle-menu,
+.close-menu {
   display: none;
   flex: 0 0 auto;
   text-align: right;
@@ -427,17 +428,17 @@ nav li.nav-current a {
 }
 
 @media screen and (max-width: 768px) {
-    nav > ul {
-        flex-direction: column;
-    }
+  nav > ul {
+    flex-direction: column;
+  }
 }
 
 .testimonials {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.testimonial{
+.testimonial {
   font-size: 1.2em;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -447,11 +448,12 @@ nav li.nav-current a {
   position: relative;
 }
 
-.testimonial::before, .testimonial::after {
+.testimonial::before,
+.testimonial::after {
   font-family: 'Open Sans', sans-serif;
-  content: "\201C";
+  content: '\201C';
   color: var(--darkBlue);
-  font-size:4em;
+  font-size: 4em;
   position: absolute;
 }
 
@@ -460,13 +462,13 @@ nav li.nav-current a {
   top: 25px;
 }
 
-.testimonial::after{
+.testimonial::after {
   left: calc(100% - 25px);
   top: 100%;
 }
 
-.testimonial-person{
-  display:block;
+.testimonial-person {
+  display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
   font-style: normal;
@@ -475,90 +477,91 @@ nav li.nav-current a {
 }
 
 .testimonials-title {
-    text-align: center;
-    color: var(--darkBlue);
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
+  text-align: center;
+  color: var(--darkBlue);
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
 }
 
 .testimonial-card {
-    padding: 0 6em;
+  padding: 0 6em;
 }
 
 .testimonial-card:focus-visible {
-    outline: none;
+  outline: none;
 }
 
-.slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    transform: translate(0,-50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: 0;
-    background: 0 0;
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: 0;
+  background: 0 0;
 }
 
 .slick-prev {
-    left: -25px;
+  left: -25px;
 }
 
 .slick-next {
-    right: -25px;
+  right: -25px;
 }
 
 .slick-prev::before {
-    content: 'ᐳ';
-    transform: rotate(180deg);
-    color: var(--darkBlue);
-    font-size: 40px;
-    line-height: 1;
-    display: inline-block;
-    opacity: .75;
-    font-weight: 100;
+  content: 'ᐳ';
+  transform: rotate(180deg);
+  color: var(--darkBlue);
+  font-size: 40px;
+  line-height: 1;
+  display: inline-block;
+  opacity: 0.75;
+  font-weight: 100;
 }
 
 .slick-next::before {
-    content: 'ᐳ';
-    color: var(--darkBlue);
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 100;
-    opacity: .75;
+  content: 'ᐳ';
+  color: var(--darkBlue);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 100;
+  opacity: 0.75;
 }
 
 @media screen and (max-width: 768px) {
-    .slick-prev {
+  .slick-prev {
     left: 20px;
-    }
+  }
 
-    .slick-next {
-        right: 20px;
-    }
+  .slick-next {
+    right: 20px;
+  }
 
-    .testimonials {
-        width: 100%;
-        padding: 0 1em;
-    }
+  .testimonials {
+    width: 100%;
+    padding: 0 1em;
+  }
 
-    .testimonials p {
-        width: 100%;
-        text-align: center;
-    }
+  .testimonials p {
+    width: 100%;
+    text-align: center;
+  }
 
-    .testimonial-card {
+  .testimonial-card {
     padding: 0 2em;
-}
+  }
 }
 
 /* Hero Section */
@@ -576,9 +579,9 @@ nav li.nav-current a {
 }
 
 .hero-section .hero-text {
-    position: absolute;
-    top: 8em;
-    left: 4em;
+  position: absolute;
+  top: 8em;
+  left: 4em;
 }
 
 .hero-section .title {
@@ -627,32 +630,32 @@ nav li.nav-current a {
 }
 
 @media screen and (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        padding: 6em 1em 0 1em;
-        height: auto;
-        min-height: 80%;
-    }
+  .hero-section {
+    flex-direction: column;
+    padding: 6em 1em 0 1em;
+    height: auto;
+    min-height: 80%;
+  }
 
-    .hero-section .title {
-        font-size: 2em;
-    }
+  .hero-section .title {
+    font-size: 2em;
+  }
 
-    .hero-section .subtitle {
-        font-size: 1em;
-    }
+  .hero-section .subtitle {
+    font-size: 1em;
+  }
 
-    .hero-section .hero-text {
-        position: static;
-        margin-top:2em;
-    }
+  .hero-section .hero-text {
+    position: static;
+    margin-top: 2em;
+  }
 
-    .hero-section .hero-image {
-        width: 100%;
-        left: 0;
-        padding-bottom: 100%;
-        margin-top: -15%;
-    }
+  .hero-section .hero-image {
+    width: 100%;
+    left: 0;
+    padding-bottom: 100%;
+    margin-top: -15%;
+  }
 }
 
 /* Hero Section End */
@@ -734,24 +737,27 @@ nav.pagination a.older-posts {
   }
 
   header {
-      justify-content: space-between;
-      padding: 2em 1em;
+    justify-content: space-between;
+    padding: 2em 1em;
   }
-  header .menu, header .toggle-menu.hide {
+  header .menu,
+  header .toggle-menu.hide {
     display: none;
   }
-  header .menu.show, header .toggle-menu.show, header .close-menu.show {
+  header .menu.show,
+  header .toggle-menu.show,
+  header .close-menu.show {
     display: block;
   }
 
   header .menu {
-      width: 100vw;
-      height: 30vh;
-      background-color: var(--white);
-      color: var(--teal);
-      position: absolute;
-      top: 5em;
-      left: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--white);
+    color: var(--teal);
+    position: absolute;
+    top: 5em;
+    left: 0;
   }
 
   header nav.primary {

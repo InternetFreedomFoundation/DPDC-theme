@@ -21,8 +21,8 @@
     "dev-css": "gulp css",
     "zip": "gulp zip",
     "test": "gscan .",
-    "format": "prettier --write \"./**/*.{js,css,json,hbs}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,hbs}\""
+    "format": "prettier --write \"./**/*.{js,css,json}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json}\""
   },
   "dependencies": {
     "autoprefixer": "6.3.6",

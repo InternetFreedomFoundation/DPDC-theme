@@ -1,0 +1,15 @@
+{{#get "posts" filter="tags:testimonial" limit="all" as |testimonial|}}
+    <h1 class="testimonials-title">Testimonials</h1>
+    <div class="testimonial-feed js-testimonial-feed">
+        {{#foreach testimonial visibility="all"}}
+        <div class="testimonial-card">
+            {{!-- Post Title --}}
+            <blockquote class="testimonial">
+                {{content}}
+            </blockquote>
+            <span class="testimonial-person">{{title}}</span>
+
+        </div>
+        {{/foreach}}
+    </div>
+{{/get}}

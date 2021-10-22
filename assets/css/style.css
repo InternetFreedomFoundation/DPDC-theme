@@ -433,18 +433,19 @@ nav li.nav-current a {
   }
 }
 
+/* Testimonials Section */
 .testimonials {
   width: 70%;
   margin: 0 auto;
 }
 
 .testimonial {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  padding: 2em 2em 0 2em;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   position: relative;
 }
 
@@ -453,7 +454,7 @@ nav li.nav-current a {
   font-family: 'Open Sans', sans-serif;
   content: '\201C';
   color: var(--darkBlue);
-  font-size: 4em;
+  font-size: 4rem;
   position: absolute;
 }
 
@@ -470,7 +471,7 @@ nav li.nav-current a {
 .testimonial-person {
   display: block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
   margin-top: 1em;
@@ -479,7 +480,7 @@ nav li.nav-current a {
 .testimonials-title {
   text-align: center;
   color: var(--darkBlue);
-  font-size: 3em;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Barlow', sans-serif;
@@ -487,7 +488,7 @@ nav li.nav-current a {
 }
 
 .testimonial-card {
-  padding: 0 6em;
+  padding: 0 6rem;
 }
 
 .testimonial-card:focus-visible {
@@ -551,7 +552,7 @@ nav li.nav-current a {
 
   .testimonials {
     width: 100%;
-    padding: 0 1em;
+    padding: 0 1rem;
   }
 
   .testimonials p {
@@ -560,19 +561,20 @@ nav li.nav-current a {
   }
 
   .testimonial-card {
-    padding: 0 2em;
+    padding: 0 2rem;
   }
 }
+/* Testimonials Section End */
 
 /* Hero Section */
 
 .hero-section {
   display: flex;
   position: relative;
-  top: -6em;
+  top: -6rem;
   left: 0;
   width: 100%;
-  height: 60vh;
+  height: 65%;
   background-color: var(--teal);
   z-index: -1;
   align-items: center;
@@ -580,44 +582,46 @@ nav li.nav-current a {
 
 .hero-section .hero-text {
   position: absolute;
-  top: 8em;
-  left: 4em;
+  top: 8rem;
+  left: 7rem;
 }
 
 .hero-section .title {
   font-weight: 600;
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--darkBlue);
   text-transform: uppercase;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
+  line-height: 4.75rem;
 }
 
 .hero-section .subtitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: var(--white);
   text-transform: uppercase;
-  line-height: 1.2em;
+  line-height: 2rem;
 }
 
 .hero-section .caption {
   color: var(--white);
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
-  margin: 2em 0 1em 0;
+  margin: 2rem 0 1.5rem 0;
 }
 
 .hero-section .iff-logo {
-  width: 25%;
+  width: 30%;
 }
 
 .hero-section .hero-image {
   display: inline-block;
   position: relative;
-  width: 35%;
-  left: 60%;
-  padding-bottom: 40%;
+  width: 45%;
+  left: 45%;
+  margin-left: 2%;
+  padding-bottom: 46%;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -632,22 +636,23 @@ nav li.nav-current a {
 @media screen and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 6em 1em 0 1em;
+    padding: 6rem 1rem 0 1rem;
     height: auto;
     min-height: 80%;
   }
 
   .hero-section .title {
-    font-size: 2em;
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
 
   .hero-section .subtitle {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .hero-section .hero-text {
     position: static;
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 
   .hero-section .hero-image {

@@ -79,9 +79,9 @@
       "optional": true
     },
     "@types/node": {
-      "version": "16.11.2",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.2.tgz",
-      "integrity": "sha512-w34LtBB0OkDTs19FQHXy4Ig/TOXI4zqvXS2Kk1PAsRKZ0I+nik7LlMYxckW0tSNGtvWmzB+mrCTbuEjuB9DVsw==",
+      "version": "16.11.3",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.3.tgz",
+      "integrity": "sha512-aIYL9Eemcecs1y77XzFGiSc+FdfN58k4J23UEe6+hynf4Wd9g4DzQPwIKL080vSMuubFqy2hWwOzCtJdc6vFKw==",
       "optional": true
     },
     "abbrev": {
@@ -979,9 +979,9 @@
       }
     },
     "caniuse-db": {
-      "version": "1.0.30001270",
-      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001270.tgz",
-      "integrity": "sha512-MuN8lIXG/9Cm3t/+b+P6fct9j/Z0QIqNnET3v1/YhnbBzGDZDABLe+yIwMcXysy0/VrfM4hD9BnhH+rWZIj8rA=="
+      "version": "1.0.30001271",
+      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001271.tgz",
+      "integrity": "sha512-V7/O06sNu6e54ArdzLA1xFuYJ+kK9XXsO4pYa53ixujAVX/OVCGvDfRICSgkxdk8pdMZ+tA1v5ylLKDHNwUqEg=="
     },
     "caseless": {
       "version": "0.12.0",
@@ -1621,9 +1621,9 @@
       "integrity": "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
     },
     "electron-to-chromium": {
-      "version": "1.3.876",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.876.tgz",
-      "integrity": "sha512-a6LR4738psrubCtGx5HxM/gNlrIsh4eFTNnokgOqvQo81GWd07lLcOjITkAXn2y4lIp18vgS+DGnehj+/oEAxQ=="
+      "version": "1.3.877",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.877.tgz",
+      "integrity": "sha512-fT5mW5Giw5iyVukeHb2XvB4joBKvzHtl8Vs3QzE7APATpFMt/T7RWyUcIKSZzYkKQgpMbu+vDBTCHfQZvh8klA=="
     },
     "encodeurl": {
       "version": "1.0.2",
@@ -2538,11 +2538,6 @@
             "inherits": "1",
             "minimatch": "~0.2.11"
           }
-        },
-        "graceful-fs": {
-          "version": "1.2.3",
-          "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz",
-          "integrity": "sha1-FaSAaldUfLLS2/J/QuiajDRRs2Q="
         },
         "inherits": {
           "version": "1.0.2",
@@ -4077,11 +4072,6 @@
         "snapdragon": "^0.8.1",
         "to-regex": "^3.0.1"
       }
-    },
-    "natives": {
-      "version": "1.1.6",
-      "resolved": "https://registry.npmjs.org/natives/-/natives-1.1.6.tgz",
-      "integrity": "sha512-6+TDFewD4yxY14ptjKaS63GVdtKiES1pTPyxn9Jb0rBqPMZ7VcCiooEhPNsr+mqHtMGxa/5c/HhcC4uPEUw/nA=="
     },
     "nconf": {
       "version": "0.10.0",
@@ -6377,14 +6367,6 @@
           "version": "0.2.0",
           "resolved": "https://registry.npmjs.org/clone/-/clone-0.2.0.tgz",
           "integrity": "sha1-xhJqkK1Pctv1rNskPMN3JP6T/B8="
-        },
-        "graceful-fs": {
-          "version": "3.0.12",
-          "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.12.tgz",
-          "integrity": "sha512-J55gaCS4iTTJfTXIxSVw3EMQckcqkpdRv3IR7gu6sq0+tbC363Zx6KH/SEwXASK9JRbhyZmVjJEVJIOxYsB3Qg==",
-          "requires": {
-            "natives": "^1.1.3"
-          }
         },
         "isarray": {
           "version": "0.0.1",

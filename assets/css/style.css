@@ -584,6 +584,7 @@ nav li.nav-current a {
   position: absolute;
   top: 8rem;
   left: 7rem;
+  max-width: 50%;
 }
 
 .hero-section .title {
@@ -652,6 +653,7 @@ nav li.nav-current a {
 
   .hero-section .hero-text {
     position: static;
+    max-width: 100%;
     margin-top: 2rem;
   }
 

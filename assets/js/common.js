@@ -44,12 +44,19 @@ $.fn.formData = function () {
 } */
 
 $(function () {
-  // Toggle the menu when the logo is clicked on mobile
-  $('.logo').click(function (event) {
-    if ($('.toggle-menu').css('display') !== 'none') {
-      $('.menu').toggleClass('show');
-      return false;
-    }
+  // Toggle the menu when the hamburger is clicked on mobile
+  $('.toggle-menu').click(function (event) {
+    $('.menu').toggleClass('show');
+    $('.close-menu').toggleClass('show');
+    $('.toggle-menu').toggleClass('hide');
+    return false;
+  });
+
+  $('.close-menu').click(function (event) {
+    $('.menu').toggleClass('show');
+    $('.close-menu').toggleClass('show');
+    $('.toggle-menu').toggleClass('hide');
+    return false;
   });
 
   // Fire change handlers on radio buttons that become deselected

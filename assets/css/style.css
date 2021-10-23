@@ -676,6 +676,45 @@ nav li.nav-current a {
 
 /* Hero Section End */
 
+/* Contact Page */
+
+.contact-section {
+  margin: 0 5%;
+  width: 50%;
+}
+
+.contact-section .heading {
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  margin: 2rem 0;
+  line-height: 4.75rem;
+}
+.subheading{
+  color: var(--teal);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.subtitle{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .contact-section{
+      margin: 0;
+      padding: 0 5%;
+      width: 100%;
+  }
+}
+/*  Contact Page End */
+
 /* Protecting Journalists Section */
 .protecting-journalists {
   padding: 3em 7em;

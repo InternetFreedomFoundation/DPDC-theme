@@ -89,6 +89,16 @@ gulp.task('copy', ['css', 'js'], function () {
   return gulp.src(files).pipe(gulp.dest(ghostThemePath));
 });
 
+gulp.task('zip', ['css', 'js'], function () {
+  var targetDir = 'dist/';
+  var themeName = require('./package.json').name;
+  var filename = themeName + '.zip';
+  return gulp
+  .src(['**', '!node_modules', '!node_modules/**', '!dist', '!dist/**'])
+  .pipe(zip(filename))
+  .pipe(gulp.dest(targetDir));
+});
+
 gulp.task('default', ['build'], function () {
   gulp.start('watch');
 });

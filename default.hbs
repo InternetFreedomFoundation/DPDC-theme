@@ -46,7 +46,9 @@
 			<nav class="menu">
 				{{navigation}}
 			</nav>
-			<button class="register-button">Register with us</button>
+			{{#link href="/register/"}}
+				<button class="register-button">Register with us</button>
+			{{/link}}
 			<div class="toggle-menu">☰</div>
 			<div class="close-menu">✕</div>
 		</header>

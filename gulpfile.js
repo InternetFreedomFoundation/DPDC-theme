@@ -17,7 +17,7 @@ var customProperties = require('postcss-custom-properties');
 var easyimport = require('postcss-easy-import');
 
 // Ghost theme install path
-var ghostThemePath = '../ghost-test/content/themes/dpdc';
+var ghostThemePath = '<local_ghost_install_folder>/content/themes/dpdc';
 
 var swallowError = function swallowError(error) {
   gutil.log(error.toString());

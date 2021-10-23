@@ -1,16 +1,18 @@
 {{#get "posts" filter="tags:testimonial" limit="all" as |testimonials|}}
     {{#if testimonials}}
-        <h1 class="testimonials-title">Testimonials</h1>
-        <div class="testimonial-feed js-testimonial-feed">
-            {{#foreach testimonials visibility="all"}}
-                <div class="testimonial-card">
-                    <blockquote class="testimonial">
-                        {{content}}
-                    </blockquote>
-                    <span class="testimonial-person">{{title}}</span>
+        <div class="testimonials">
+            <h1 class="testimonials-title">Testimonials</h1>
+            <div class="testimonial-feed js-testimonial-feed">
+                {{#foreach testimonials visibility="all"}}
+                    <div class="testimonial-card">
+                        <blockquote class="testimonial">
+                            {{content}}
+                        </blockquote>
+                        <span class="testimonial-person">{{title}}</span>
 
-                </div>
-            {{/foreach}}
+                    </div>
+                {{/foreach}}
+            </div>
         </div>
     {{/if}}
 {{/get}}

@@ -1,4 +1,63 @@
-<ul>
-    <li><a href="{{@site.url}}">&copy; {{date format="YYYY"}} {{@site.title}}</a></li>
-    <li>All contents licensed under CC-BY unless stated otherwise.</li>
-</ul>
+<footer class="dpdc-footer">
+    <div class="top-section">
+        <div class="top-section-left">
+            <div class="dpdc-logo">
+                <a class="logo" href="{{@site.url}}">
+                    {{>logo}}
+                </a>
+                <h1>Digital Patrakar Defence Clinic</h1>
+            </div>
+            <div class="buttons">
+                {{#link href="/register/"}}
+                <button class="register-button">Register with us</button>
+                {{/link}}
+                <a class="twitter-button" target="_blank" rel="noopener noreferrer" href="https://twitter.com/PatrakarClinic">
+                    <i></i>
+                    Follow @PatrakarClinic
+                </a>
+            </div>
+            <nav class="footer-nav">
+                {{navigation}}
+            </nav>
+        </div>
+        <div class="top-section-right">
+            <div class="iff-logo">
+                {{>iffLogo black=true}}
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/internetfreedom.in/?hl=en">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCahIqRDjhvhuocX3BJdxfQQ">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/internetfreedomfoundation">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/internetfreedom">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://internetfreedom.in/contact/">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://internetfreedom.in/privacy-policy/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://internetfreedom.in/iff-posh-policy/">IFF PoSH Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div>
+            <a href="{{@site.url}}">&copy; {{date format="YYYY"}} Internet Freedom Foundation</a>
+            <span>All contents licensed under CC-BY unless stated otherwise.</span>
+        </div>
+        <span>
+            Designed by <a target="_blank" rel="noopener noreferrer" href="https://www.prashantmatta.com/">Prashant Matta</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.madhushreek.com/">Madhushree</a>. Developed by <a target="_blank" rel="noopener noreferrer" href="https://krishna-acondy.io/">Krishna Acondy</a> and <a target="_blank" rel="noopener noreferrer" href="https://kartikcho.github.io/">Kartik Choudhary</a>.
+        </span>
+    </div>
+</footer>

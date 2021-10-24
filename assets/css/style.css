@@ -577,6 +577,53 @@ nav li.nav-current a {
 }
 /* Testimonials Section End */
 
+/* Sponsors Section */
+.sponsors {
+  width: 100%;
+  padding: 3rem 7rem;
+}
+
+.sponsors-grid {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.sponsor-card {
+  font-size: 1.2rem;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+.sponsor-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sponsors-title {
+  text-align: center;
+  color: var(--darkBlue);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsors {
+    padding: 2rem 1rem;
+  }
+
+  .sponsors-grid {
+    flex-direction: column;
+  }
+}
+/* Sponsors Section End */
+
 /* Hero Section */
 
 .hero-section {

@@ -715,6 +715,63 @@ nav li.nav-current a {
 }
 /*  Contact Page End */
 
+/* Register Page */
+
+.register-section {
+  padding: 0 5%;
+  width: 100%;
+}
+
+.register-section .heading {
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'Barlow', sans-serif;
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  margin: 2rem 0 1rem 0;
+  line-height: 4.75rem;
+}
+.subheading{
+  color: var(--teal);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.step-container{
+  color: var(--darkBlue);
+  margin: 2rem 0;
+}
+.step-count{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+}
+.step-icon{
+  height: 4rem;
+}
+.step-heading{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.step-content{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  line-height: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .register-section{
+      /* margin: 0;
+      padding: 0 5%; */
+  }
+}
+/*  Register Page End */
+
 /* Protecting Journalists Section */
 .protecting-journalists {
   padding: 3em 7em;

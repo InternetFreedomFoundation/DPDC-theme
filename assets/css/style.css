@@ -1040,7 +1040,7 @@ nav li.nav-current a {
 /* Footer */
 .dpdc-footer {
   width: 100%;
-  padding: 3rem 7rem;
+  padding: 3rem 5%;
   display: flex;
   flex-direction: column;
 }
@@ -1146,7 +1146,7 @@ nav li.nav-current a {
 
 @media screen and (max-width: 768px) {
   .dpdc-footer {
-    padding: 2rem 1rem;
+    padding: 2rem 5%;
   }
 
   .dpdc-footer .top-section {
@@ -1290,7 +1290,7 @@ nav.pagination a.older-posts {
 
 .banner {
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 5%;
   background-color: var(--darkBlue);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -1307,7 +1307,7 @@ nav.pagination a.older-posts {
 }
 @media screen and (max-width: 768px) {
   .banner {
-    padding: 20px;
+    padding: 20px 5%;
   }
 }
 

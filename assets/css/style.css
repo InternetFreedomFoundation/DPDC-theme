@@ -7,6 +7,8 @@
   --grey: #D9D9D9;
   --midBlue: #226c8b;
   --darkGrey: #545454;
+  --pagePadding: 3rem 5%;
+  --pagePaddingMobile: 2rem 5%;
 }
 
 /* 0: Normalize */
@@ -580,7 +582,7 @@ nav li a {
 /* Sponsors Section */
 .sponsors {
   width: 100%;
-  padding: 3rem 7rem;
+  padding: var(--pagePadding);
 }
 
 .sponsors-grid {
@@ -889,7 +891,7 @@ nav li a {
   line-height: 2rem;
 }
 .services-infobanner {
-  padding: 3rem 5%;
+  padding: var(--pagePadding);
   background-color: var(--midBlue);
   color: var(--white);
   display: flex;
@@ -947,7 +949,7 @@ nav li a {
 
 /* Protecting Journalists Section */
 .protecting-journalists {
-  padding: 3em 5%;
+  padding: var(--pagePadding);
   background-color: var(--midBlue);
   color: var(--white);
   width: 100%;
@@ -1053,7 +1055,7 @@ nav li a {
 
 @media screen and (max-width: 768px) {
   .protecting-journalists {
-    padding: 2em 5%;
+    padding: var(--pagePaddingMobile)
   }
   .protecting-journalists .main {
     flex-direction: column-reverse;
@@ -1126,7 +1128,7 @@ nav li a {
 
 /* Twitter Feed */
 .tweets {
-  padding: 3rem 5%;
+  padding: var(--pagePadding);
   display: flex;
   justify-content: space-between;
   background-color: var(--lightBlue);
@@ -1155,7 +1157,7 @@ nav li a {
 
 @media screen and (max-width: 768px) {
   .tweets {
-    padding: 2rem 5%;
+    padding: var(--pagePaddingMobile);
     flex-direction: column;
   }
 
@@ -1282,7 +1284,7 @@ nav li a {
 
 @media screen and (max-width: 768px) {
   .dpdc-footer {
-    padding: 2rem 5%;
+    padding: var(--pagePaddingMobile);
   }
 
   .dpdc-footer .top-section {

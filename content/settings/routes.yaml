@@ -1,5 +1,6 @@
 routes:
   /register/: register
+  /services/: services
   /contact/: contact
 
 collections:

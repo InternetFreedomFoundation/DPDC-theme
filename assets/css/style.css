@@ -446,9 +446,14 @@ nav li a {
 }
 
 /* Testimonials Section */
+.testimonials-wrapper {
+  width: 100%;
+  padding: var(--pagePadding);
+}
+
 .testimonials {
   width: 70%;
-  margin: -2em auto 4em auto;
+  margin: 0 auto;
 }
 
 .testimonial {
@@ -478,6 +483,10 @@ nav li a {
 .testimonial::after {
   left: calc(100% - 25px);
   top: 100%;
+}
+
+.testimonial-feed {
+  padding: 1rem;
 }
 
 .testimonial-person {
@@ -555,6 +564,10 @@ nav li a {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonials-wrapper {
+    padding: var(--pagePaddingMobile);
+  }
+
   .slick-prev {
     left: 20px;
   }
@@ -592,7 +605,6 @@ nav li a {
 
 .sponsor-card {
   font-size: 1.2rem;
-  width: 72px;
   height: 72px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
@@ -630,8 +642,7 @@ nav li a {
 
 .hero-section {
   display: flex;
-  position: relative;
-  top: -6rem;
+  margin-top: -6rem;
   left: 0;
   width: 100%;
   max-height: 70vh;

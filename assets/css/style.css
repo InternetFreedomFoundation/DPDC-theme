@@ -682,7 +682,6 @@ nav li.nav-current a {
   margin: 0 5%;
   width: 50%;
 }
-
 .contact-section .heading {
   font-weight: 500;
   font-size: 3rem;
@@ -691,7 +690,7 @@ nav li.nav-current a {
   margin: 2rem 0;
   line-height: 4.75rem;
 }
-.subheading{
+.subheading {
   color: var(--teal);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -699,7 +698,7 @@ nav li.nav-current a {
   text-transform: uppercase;
   line-height: 2rem;
 }
-.subtitle{
+.subtitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -707,10 +706,10 @@ nav li.nav-current a {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .contact-section{
-      margin: 0;
-      padding: 0 5%;
-      width: 100%;
+  .contact-section {
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
   }
 }
 /*  Contact Page End */
@@ -718,10 +717,10 @@ nav li.nav-current a {
 /* Register Page */
 
 .register-section {
-  padding: 0 5%;
-  width: 100%;
+  margin: 0 5%;
+  padding: 0;
+  width: 60%;
 }
-
 .register-section .heading {
   font-weight: 500;
   font-size: 3rem;
@@ -731,7 +730,7 @@ nav li.nav-current a {
   margin: 2rem 0 1rem 0;
   line-height: 4.75rem;
 }
-.subheading{
+.subheading {
   color: var(--teal);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -739,25 +738,34 @@ nav li.nav-current a {
   line-height: 2rem;
   text-transform: uppercase;
 }
-.step-container{
+.step-container {
   color: var(--darkBlue);
   margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
 }
-.step-count{
+.step-count {
+  display: flex;
+  align-items: center;
+}
+.step-count span {
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 4rem;
+  padding: 0 0.5rem;
 }
-.step-icon{
-  height: 4rem;
+.step-icon {
+  height: 4.5rem;
+  padding: 0 1rem;
 }
-.step-heading{
+.step-heading {
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
-.step-content{
+.step-content {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -765,9 +773,13 @@ nav li.nav-current a {
   line-height: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .register-section{
-      /* margin: 0;
-      padding: 0 5%; */
+  .register-section {
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+  .step-container {
+    grid-template-columns: 1fr;
   }
 }
 /*  Register Page End */
@@ -1024,6 +1036,22 @@ nav.pagination a.older-posts {
   header nav.primary {
     border-top: none;
   }
+}
+
+.banner {
+  width: 100%;
+  padding: 40px 100px;
+  background-color: var(--darkBlue);
+}
+.banner p {
+  color: white;
+  margin: auto;
+}
+.banner a {
+  color: white;
+}
+.banner a:hover {
+  color: var(--lightBlue);
 }
 
 /* Allow upgrade to Ghost 2.0 */

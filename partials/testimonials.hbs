@@ -1,5 +1,6 @@
 {{#get "posts" filter="tags:testimonial" limit="all" as |testimonials|}}
     {{#if testimonials}}
+    <div class="testimonials-wrapper">
         <div class="testimonials">
             <h1 class="testimonials-title">Testimonials</h1>
             <div class="testimonial-feed js-testimonial-feed">
@@ -14,5 +15,6 @@
                 {{/foreach}}
             </div>
         </div>
+    </div>
     {{/if}}
 {{/get}}

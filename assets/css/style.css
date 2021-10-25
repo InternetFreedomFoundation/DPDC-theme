@@ -750,7 +750,7 @@ nav li a {
   width: 50%;
 }
 .contact-section .heading {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
   color: var(--darkBlue);
   text-transform: uppercase;
@@ -789,7 +789,7 @@ nav li a {
   width: 60%;
 }
 .register-section .heading {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
   font-family: 'Barlow', sans-serif;
   color: var(--darkBlue);

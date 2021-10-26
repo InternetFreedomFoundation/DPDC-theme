@@ -611,6 +611,10 @@ nav li a {
   position: relative;
 }
 
+.sponsor-card:not(:first-child) {
+  margin: 1rem auto 0 auto;
+}
+
 .sponsor-card img {
   width: 100%;
   height: auto;
@@ -1149,7 +1153,7 @@ nav li a {
 }
 
 .twitter-feed {
-  width: 45%;
+  width: 40%;
 }
 
 .twitter-feed .feed-wrapper {

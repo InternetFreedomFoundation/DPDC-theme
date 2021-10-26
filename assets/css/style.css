@@ -860,6 +860,7 @@ nav li a {
   margin-top: 0.5rem;
 }
 .calendar-card .card .info {
+  margin: auto;
   margin-left: 1.5rem;
 }
 @media screen and (max-width: 900px) {

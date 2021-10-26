@@ -1,0 +1,24 @@
+{{!< default}}
+
+<div class="calendar-section">
+    <h1 class="heading">
+        Calendar
+    </h1>
+    {{!-- Displays current month name --}}
+    <h3 class="subheading">
+        The Schedule for {{date format="MMMM"}} is as follows:
+    </h3>
+    {{!-- Tweak monthly calendar here --}}
+    <div class="calendar-card">
+        {{> calendarCard day="6" month="Oct" weekday="Saturday" time="11 - 12PM" title="SANJANA SRIKUMAR" subtitle="Consulting Lawyer"}}
+        {{> calendarCard day="6" month="Oct" weekday="Saturday" time="11 - 12PM" title="SANJANA SRIKUMAR" subtitle="Consulting Lawyer"}}
+        {{> calendarCard day="6" month="Oct" weekday="Saturday" time="11 - 12PM" title="SANJANA SRIKUMAR" subtitle="Consulting Lawyer"}}
+        {{> calendarCard day="6" month="Oct" weekday="Saturday" time="11 - 12PM" title="SANJANA SRIKUMAR" subtitle="Consulting Lawyer"}}
+    </div>
+</div>
+{{!-- Only use center align for this banner --}}
+<div class="banner" style="text-align: center;">
+    <p>
+        This schedule will be regularly updated and posted on <a href="https://twitter.com/PatrakarClinic">DPDC’s Twitter</a> and <a href="https://www.instagram.com/internetfreedom.in/?hl=en">IFF’s Instagram</a> handle.
+    </p>
+</div>

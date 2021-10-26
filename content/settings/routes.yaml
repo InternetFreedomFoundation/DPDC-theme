@@ -2,6 +2,7 @@ routes:
   # /register/: register
   /services/: services
   /contact/: contact
+  /calendar/: calendar
 
 collections:
   /:

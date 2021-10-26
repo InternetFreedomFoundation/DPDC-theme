@@ -763,15 +763,16 @@ nav li a {
   margin: 2rem 0;
   line-height: 4.75rem;
 }
-.subheading {
+.contact-section .subheading {
   color: var(--teal);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
-.subtitle {
+.contact-section .subtitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -791,7 +792,107 @@ nav li a {
     width: 100%;
   }
 }
-/*  Contact Page End */
+/* Contact Page End */
+
+/* Calendar Page */
+
+.calendar-section {
+  margin: 0 5%;
+}
+.calendar-section .heading {
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.calendar-section .subheading {
+  color: var(--teal);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+.calendar-card {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 10px;
+  width: 100%;
+}
+.calendar-card .details {
+  background-color: var(--midBlue);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 0.5rem 2.75rem;
+  text-align: center;
+}
+.calendar-card .details .date {
+  font-size: 3rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  line-height: 4rem;
+  height: 3.5rem;
+  width: 4rem;
+}
+.calendar-card .details .month {
+  font-size: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+.calendar-card .details .day,
+.calendar-card .details .time {
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.calendar-card .details .time {
+  margin-bottom: 0.5rem;
+}
+.calendar-card .card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.calendar-card .card .title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.calendar-card .card .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--darkGrey);
+  margin-top: 0.5rem;
+}
+.calendar-card .card .info {
+  margin: auto;
+  margin-left: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+  .calendar-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calendar-section {
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+}
+/* Calendar Page End */
 
 /* Register Page */
 
@@ -819,7 +920,7 @@ nav li a {
 }
 .step-container {
   color: var(--darkBlue);
-  margin: 2rem 0;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 9fr;
 }
@@ -1101,6 +1202,10 @@ nav li a {
 
   .protecting-journalists .copy .cta a {
     width: 100%;
+  }
+
+  .protecting-journalists .copy p {
+    color: var(--grey);
   }
 
   .bubble {

@@ -1,5 +1,5 @@
 routes:
-  /register/: register
+  # /register/: register
   /services/: services
   /contact/: contact
 

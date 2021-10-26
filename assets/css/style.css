@@ -1160,7 +1160,7 @@ nav li a {
 
 .tweets h1 {
   font-size: 3rem;
-  /* margin: 0; */
+  margin: 0 0 1rem 0;
   text-transform: uppercase;
 }
 
@@ -1191,9 +1191,19 @@ nav li a {
     flex-direction: column;
   }
 
+  .tweets h1 {
+    width: 100%;
+    text-align: center;
+  }
+
   .twitter-feed,
+  .register-form,
   .donate {
     width: 100%;
+  }
+
+  .register-form {
+    margin-top: 2rem;
   }
 
   .donate {

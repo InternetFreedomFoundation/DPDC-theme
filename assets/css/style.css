@@ -1168,11 +1168,11 @@ nav li a {
   overflow: auto;
 }
 
-.register {
+.register-form {
   width: 46%;
 }
 
-.register .register-form-frame {
+.register-form .register-form-frame {
   width: 100%;
   height: 800px;
   border: none;

@@ -1,7 +1,7 @@
-{{#get "posts" filter="tags:sponsor" limit="all" as |sponsors|}}
+{{#get "posts" filter="tags:partner" limit="all" as |sponsors|}}
     {{#if sponsors}}
         <div class="sponsors">
-            <h1 class="sponsors-title">Sponsors</h1>
+            <h1 class="sponsors-title">Our Partners</h1>
             <div class="sponsors-grid">
                 {{#foreach sponsors visibility="all"}}
                     <div class="sponsor-card">

@@ -1567,6 +1567,7 @@ article.post {
   background-color: var(--lightBlue);
   border-radius: 4px;
   padding: 0.3rem 0.4rem;
+  font-weight: 500;
 }
 
 .post-tags a:not(:first-child) {
@@ -1626,6 +1627,11 @@ article.post {
 
   .post-content h1, .tag-page h1 {
     font-size: 1.25rem;
+  }
+
+  .post-content img {
+    width: 100vw;
+    margin-left: calc(-5% - 2px);
   }
 
   .post-page {

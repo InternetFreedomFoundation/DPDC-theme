@@ -1,0 +1,23 @@
+<a href="{{url}}">
+    <article class="{{post_class}} post">
+        {{#if feature_image}}
+            <div class="text">
+                <h3 class="post-title">{{title}}</h3>
+                <div class="excerpt">
+                    {{excerpt words="40"}}
+                </div>
+            </div>
+            <img class="post-image lazyload u-object-fit" {{#if feature_image}} data-srcset="{{img_url feature_image size=" 1x"}}
+                1x, {{img_url feature_image size="2x" }} 2x, {{img_url feature_image size="3x" }} 3x" {{/if}}
+                src={{img_url feature_image}} data-sizes="auto"
+                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+        {{else}}
+            <div class="text full-width">
+                <h3 class="post-title">{{title}}</h3>
+                <div class="excerpt">
+                    {{excerpt characters="200"}}
+                </div>
+            </div>
+        {{/if}}
+    </article>
+</a>

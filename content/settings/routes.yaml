@@ -3,11 +3,12 @@ routes:
   /services/: services
   /contact/: contact
   /calendar/: calendar
+  /: home
 
 collections:
-  /:
-    permalink: /{slug}/
-    template: index
+  /blog/:
+    permalink: /blog/{slug}/
+    filter: tag:blog
 
 taxonomies:
   tag: /tag/{slug}/

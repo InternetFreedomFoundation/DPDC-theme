@@ -401,15 +401,42 @@ header {
   height: auto;
 }
 
+.toggle-menu .line{
+  width: 100%;
+  height: 5px;
+  background-color: var(--darkBlue);
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-menu.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+.toggle-menu.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+.toggle-menu.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
 .toggle-menu,
 .close-menu {
   display: none;
   flex: 0 0 auto;
   text-align: right;
-  color: var(--white);
-  font-size: 3em;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 3rem;
   overflow: hidden;
 }
 
@@ -816,9 +843,9 @@ nav li a {
   margin-bottom: 4rem;
 }
 .calendar-card {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 10px;
   width: 100%;
 }
@@ -1466,39 +1493,147 @@ nav li a {
 }
 /* Footer End */
 
-a.card {
-  font-weight: normal;
-  color: inherit;
-  display: block;
+/* Blog Page */
+
+.blog-page {
+  padding: var(--pagePadding);
+  width: 100%;
 }
-a.card:hover {
+
+.blog-page h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
   color: var(--darkBlue);
+}
+
+.blog-page .posts {
+  width: 60%;
 }
 
 article.post {
-  overflow-x: auto;
-  padding: 2em;
-  border-bottom: 1px solid var(--darkBlue);
+  display: flex;
+  margin: 0 0 2.5rem 0;
 }
 
-.post h2 {
-  font-weight: 700;
-}
-
-.post time {
-  color: #987;
-  float: right;
-  line-height: 2em;
-  margin-left: 2em;
-}
-
-a.card:hover time {
+.post .post-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
   color: var(--darkBlue);
+  margin: 0 0 0.5rem 0;
 }
 
-.post-template article.post {
-  border-bottom: none;
+.post .text {
+  width: 65%;
+  position: relative;
+  color: var(--darkGrey);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
+
+.post .text .excerpt {
+  font-size: 1.2rem;
+}
+
+.post .text.full-width {
+  width: 100%;
+}
+
+.post img {
+  width: 30%;
+  margin: 0 0 0 1rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.post-page {
+  padding: var(--pagePadding);
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.post-content h1, .tag-page h1 {
+  font-size: 2.25rem;
+  color: var(--darkBlue);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.post-tags a {
+  background-color: var(--lightBlue);
+  border-radius: 4px;
+  padding: 0.3rem 0.4rem;
+}
+
+.post-tags a:not(:first-child) {
+  margin-left: 0.2rem;
+}
+
+.tag-page {
+  padding: var(--pagePadding);
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-page .posts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-page {
+    padding: var(--pagePaddingMobile);
+  }
+
+  .tag-page {
+    padding: var(--pagePaddingMobile);
+  }
+
+  .blog-page h1 {
+    font-size: 2rem;
+  }
+
+  .blog-page .posts {
+    width: 100%;
+  }
+
+  .post .post-title {
+    font-size: 1.2rem;
+  }
+
+  article.post {
+    flex-direction: column-reverse;
+  }
+
+  .post .text, .post img {
+    width: 100%;
+  }
+
+  .post img {
+    margin: 0 0 1rem 0;
+  }
+
+  .post .text .excerpt {
+    font-size: 0.9rem;
+  }
+
+  .post-content {
+    width: 100%;
+  }
+
+  .post-content h1, .tag-page h1 {
+    font-size: 1.25rem;
+  }
+
+  .post-page {
+    padding: var(--pagePaddingMobile);
+  }
+}
+
+/* Blog Page End */
 
 nav.pagination {
   padding: 2em 2em 4em 2em;
@@ -1531,10 +1666,6 @@ nav.pagination a.older-posts {
   }
   .logo .logo-h {
     display: block;
-  }
-
-  article.post {
-    padding: 2em 0;
   }
 
   header,

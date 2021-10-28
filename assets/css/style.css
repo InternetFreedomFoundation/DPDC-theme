@@ -1346,13 +1346,42 @@ nav li a {
 
 .twitter-feed {
   width: 46%;
-  max-height: 800px;
+}
+
+a.twitter-timeline {
+  display: block;
+  height: 100%;
 }
 
 .twitter-feed .feed-wrapper {
   height: 100%;
   border-radius: 5px;
   overflow: auto;
+  height: 800px;
+}
+
+.twitter-feed-fallback {
+  display: flex;
+  background-color: var(--white);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  color: var(--darkBlue);
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.twitter-feed-fallback .grey {
+  color: var(--darkGrey);
+  font-size: 0.9rem;
+}
+
+.twitter-feed-fallback span {
+  margin-top: 1rem;
 }
 
 .register-form {
@@ -1376,6 +1405,14 @@ nav li a {
     flex-direction: column;
   }
 
+  .twitter-feed .feed-wrapper, .register-form .register-form-frame {
+    height: 440px;
+  }
+
+  .twitter-feed-fallback, .twitter-feed-fallback .grey {
+    font-size: 0.8rem;
+  }
+
   .tweets h1 {
     width: 100%;
     font-size: 2rem;
@@ -1386,10 +1423,6 @@ nav li a {
   .register-form,
   .donate {
     width: 100%;
-  }
-
-  .twitter-feed .feed-wrapper {
-    height: calc(800px - 2rem);
   }
 
   .register-form {

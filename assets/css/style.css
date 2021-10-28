@@ -1541,6 +1541,7 @@ article.post {
 
 .post img {
   width: 30%;
+  height: 160px;
   margin: 0 0 0 1rem;
   object-fit: cover;
   object-position: center center;
@@ -1615,6 +1616,8 @@ article.post {
 
   .post img {
     margin: 0 0 1rem 0;
+    height: auto;
+    max-height: 240px;
   }
 
   .post .text .excerpt {

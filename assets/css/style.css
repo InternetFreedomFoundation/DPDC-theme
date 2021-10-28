@@ -400,7 +400,7 @@ header {
 
 .toggle-menu .line{
   width: 100%;
-  height: 5px;
+  height: 4px;
   border-radius: 4px;
   background-color: var(--darkBlue);
   display: block;
@@ -422,10 +422,10 @@ header {
 }
 
 .toggle-menu.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-  -ms-transform: translateY(-13px) rotate(-45deg);
-  -o-transform: translateY(-13px) rotate(-45deg);
-  transform: translateY(-13px) rotate(-45deg);
+  -webkit-transform: translateY(-11px) rotate(-45deg);
+  -ms-transform: translateY(-11px) rotate(-45deg);
+  -o-transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
 }
 
 .toggle-menu,
@@ -436,6 +436,7 @@ header {
   width: 2.5rem;
   height: 3rem;
   overflow: hidden;
+  margin-left: 1rem;
 }
 
 nav {
@@ -457,6 +458,7 @@ nav.footer-nav > ul {
 }
 
 nav li a {
+  color: var(--midBlue);
   display: block;
   line-height: 1em;
   padding: 1rem;
@@ -467,6 +469,11 @@ nav li a {
 @media screen and (max-width: 768px) {
   nav > ul {
     flex-direction: column;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -516,10 +523,11 @@ nav li a {
 
 .testimonial-person {
   display: block;
+  color: var(--midBlue);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 1rem;
   margin-left: 2rem;
 }
@@ -540,6 +548,11 @@ nav li a {
 
 .testimonial-card:focus-visible {
   outline: none;
+}
+
+.slick-prev,
+.slick-next {
+  display: unset;
 }
 
 .slick-prev,
@@ -589,20 +602,22 @@ nav li a {
 }
 
 @media screen and (max-width: 768px) {
-  .testimonials-wrapper {
-    padding: var(--pagePaddingMobile);
-  }
-
-  .testimonials-title {
-    font-size: 2.5rem;
-  }
-
   .slick-prev {
     left: 20px;
   }
 
   .slick-next {
     right: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+    padding: 2rem 0;
   }
 
   .testimonials {
@@ -617,6 +632,18 @@ nav li a {
 
   .testimonial-card {
     padding: 0 2rem;
+  }
+
+  .testimonial-person {
+    margin-left: 0;
+  }
+
+  .testimonials-wrapper {
+    padding: var(--pagePaddingMobile);
+  }
+
+  .testimonials-title {
+    font-size: 2.5rem;
   }
 }
 /* Testimonials Section End */
@@ -680,10 +707,11 @@ nav li a {
   margin-top: -6rem;
   left: 0;
   width: 100%;
-  max-height: 70vh;
+  max-height: 80vh;
   background-color: var(--teal);
   z-index: -1;
   align-items: center;
+  justify-content: space-between;
   padding: var(--pagePadding);
 }
 
@@ -696,7 +724,7 @@ nav li a {
   font-size: 4rem;
   color: var(--darkBlue);
   text-transform: uppercase;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1.5rem 0;
   line-height: 4.75rem;
 }
 
@@ -709,8 +737,12 @@ nav li a {
   line-height: 2rem;
 }
 
+.hero-section .subtitle br {
+  display: unset;
+}
+
 .hero-section .caption {
-  color: var(--white);
+  color: var(--grey);
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   margin: 2rem 0 1.5rem 0;
@@ -722,8 +754,7 @@ nav li a {
 
 .hero-section .hero-image {
   display: inline-block;
-  width: 40%;
-  margin-left: 8rem;
+  width: 50%;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -731,10 +762,10 @@ nav li a {
 .hero-section .hero-image img {
   width: 95%;
   height: auto;
-  margin-top: 13rem;
+  margin-top: 11rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 650px) {
   .hero-section {
     flex-direction: column;
     padding: var(--pagePaddingMobile);
@@ -750,6 +781,10 @@ nav li a {
 
   .hero-section .subtitle {
     font-size: 1.5rem;
+  }
+
+  .hero-section .subtitle br {
+    display: none;
   }
 
   .hero-section .hero-text {
@@ -789,7 +824,7 @@ nav li a {
   line-height: 4.75rem;
 }
 .contact-section .subheading {
-  color: var(--teal);
+  color: var(--midBlue);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -825,14 +860,14 @@ nav li a {
   margin: 0 5%;
 }
 .calendar-section .heading {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
   color: var(--darkBlue);
   text-transform: uppercase;
   margin: 1.5rem 0;
 }
 .calendar-section .subheading {
-  color: var(--teal);
+  color: var(--midBlue);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -905,7 +940,7 @@ nav li a {
   margin-left: 1.5rem;
 }
 @media screen and (max-width: 900px) {
-  .calendar-card{
+  .calendar-card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -915,6 +950,25 @@ nav li a {
     margin: 0;
     padding: 0 5%;
     width: 100%;
+  }
+  .calendar-card .details .date {
+    font-size: 3rem;
+  }
+  .calendar-card .details .month {
+    font-size: 1.5rem;
+  }
+  .calendar-card .details .day,
+  .calendar-card .details .time {
+    font-size: 1rem;
+  }
+  .calendar-card .details .time {
+    margin-bottom: 0.5rem;
+  }
+  .calendar-card .card .title {
+    font-size: 1.5rem;
+  }
+  .calendar-card .card .subtitle {
+    font-size: 1rem;
   }
 }
 /* Calendar Page End */
@@ -936,7 +990,7 @@ nav li a {
   line-height: 4.75rem;
 }
 .register-section .subheading {
-  color: var(--teal);
+  color: var(--midBlue);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -997,7 +1051,7 @@ nav li a {
   width: 80%;
 }
 .services-section .heading {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
   font-family: 'Barlow', sans-serif;
   color: var(--darkBlue);
@@ -1006,7 +1060,7 @@ nav li a {
   line-height: 4.75rem;
 }
 .services-section .subheading {
-  color: var(--teal);
+  color: var(--midBlue);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -1106,6 +1160,7 @@ nav li a {
 .protecting-journalists .main {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 .protecting-journalists .copy {
   font-family: 'Open Sans', sans-serif;
@@ -1119,11 +1174,14 @@ nav li a {
 }
 
 .protecting-journalists .copy .cta a {
-  width: 50%;
+  width: 360px;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 .protecting-journalists .copy .cta button {
   width: 100%;
+  height: 52px;
 }
 
 .protecting-journalists h1 {
@@ -1149,7 +1207,7 @@ nav li a {
   align-items: center;
   text-align: center;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .bubble:not(:first-child) {
@@ -1184,6 +1242,7 @@ nav li a {
   margin-left: -10%;
   margin-top: -8%;
   font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .bubble.teal {
   background-color: var(--teal);
@@ -1200,12 +1259,20 @@ nav li a {
 
 .protecting-journalists .copy p {
   color: var(--grey);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
   .protecting-journalists {
     padding: var(--pagePaddingMobile);
   }
+  
+  .protecting-journalists h1 {
+    font-size: 2rem;
+  }
+
   .protecting-journalists .main {
     flex-direction: column-reverse;
   }
@@ -1227,10 +1294,16 @@ nav li a {
 
   .protecting-journalists .copy .cta a {
     width: 100%;
+    font-size: 1.25rem;
+  }
+  
+  .protecting-journalists .copy .cta button {
+    height: 48px;
   }
 
   .protecting-journalists .copy p {
-    color: var(--grey);
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .bubble {
@@ -1254,10 +1327,14 @@ nav li a {
     width: 184px;
     height: 184px;
   }
+  .bubble .large-text {
+    font-size: 3rem;
+  }
   .bubble.light-blue {
     margin-left: 0;
     margin-top: -10%;
     font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
 
@@ -1296,16 +1373,21 @@ nav li a {
 
 .twitter-feed {
   width: 46%;
+  height: 800px;
 }
 
 .twitter-feed .feed-wrapper {
-  height: 800px;
+  height: 100%;
   border-radius: 5px;
   overflow: auto;
 }
 
 .register-form {
   width: 46%;
+}
+
+.register-form h1{
+  font-size: 3rem;
 }
 
 .register-form .register-form-frame {
@@ -1323,6 +1405,7 @@ nav li a {
 
   .tweets h1 {
     width: 100%;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -1334,6 +1417,11 @@ nav li a {
 
   .register-form {
     margin-top: 2rem;
+  }
+  
+  .register-form h1{
+    font-size: 2rem;
+    text-align: center;
   }
 
   .donate {
@@ -1441,10 +1529,15 @@ nav li a {
 .dpdc-footer .bottom-section {
   display: flex;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
   width: 75%;
   margin: 1rem auto;
   line-height: 2rem;
   text-align: center;
+}
+
+.dpdc-footer .bottom-section a {
+  color: var(--midBlue);
 }
 
 .dpdc-footer .bottom-section span,
@@ -1718,7 +1811,7 @@ nav.pagination a.older-posts {
   }
 
   header {
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 2em 1em;
   }
   header .menu,
@@ -1746,6 +1839,10 @@ nav.pagination a.older-posts {
 
   header nav.primary {
     border-top: none;
+  }
+
+  .register-button-container {
+    margin-left: auto;
   }
 }
 

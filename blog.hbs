@@ -1,0 +1,12 @@
+{{!< default}}
+<div class="blog-page">
+    <h1>
+        DPDC Blog
+    </h1>
+    <div class="posts">
+        {{#foreach posts}}
+            {{>article}}
+        {{/foreach}}
+        {{pagination}}
+    </div>
+</div>

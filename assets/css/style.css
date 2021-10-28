@@ -97,9 +97,6 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-figure {
-  margin: 1em 40px;
-}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -1556,6 +1553,20 @@ article.post {
   display: flex;
   flex-direction: column;
   width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.post-content img {
+  margin-bottom: 1rem;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+.post-content a {
+  font-weight: 500;
+  color: var(--darkGrey);
+  text-decoration: underline;
 }
 
 .post-content h1, .tag-page h1 {
@@ -1563,6 +1574,26 @@ article.post {
   color: var(--darkBlue);
   font-weight: 500;
   text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+}
+
+.post-content h2, .post-content h3 {
+  color: var(--darkBlue);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+}
+
+.post-content h2 {
+  font-size: 1.75rem;
+}
+
+.post-content h3 {
+  font-size: 1.5rem;
+}
+
+.post-content strong {
+  font-weight: 600;
 }
 
 .post-tags a {
@@ -1571,6 +1602,7 @@ article.post {
   border-radius: 4px;
   padding: 0.3rem 0.4rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .post-tags a:not(:first-child) {
@@ -1628,6 +1660,7 @@ article.post {
 
   .post-content {
     width: 100%;
+    font-size: 1rem;
   }
 
   .post-content h1, .tag-page h1 {

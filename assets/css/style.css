@@ -1365,7 +1365,7 @@ nav li a {
 }
 
 .tweets h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin: 0 0 1rem 0;
   text-transform: uppercase;
 }
@@ -1415,7 +1415,7 @@ a.twitter-timeline {
 }
 
 .register-form h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 .register-form .register-form-frame {
@@ -1443,7 +1443,7 @@ a.twitter-timeline {
 
   .tweets h1 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -1458,7 +1458,7 @@ a.twitter-timeline {
   }
 
   .register-form h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 

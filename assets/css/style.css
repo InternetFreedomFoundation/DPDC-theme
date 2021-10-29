@@ -628,10 +628,10 @@ nav li a {
 }
 
 .sponsors-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   margin-top: 2rem;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .sponsor-card {
@@ -647,9 +647,11 @@ nav li a {
 }
 
 .sponsor-card img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 
 .sponsors-title {
@@ -665,10 +667,6 @@ nav li a {
 @media screen and (max-width: 768px) {
   .sponsors {
     padding: var(--pagePaddingMobile);
-  }
-
-  .sponsors-grid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* Sponsors Section End */
@@ -1603,6 +1601,7 @@ a.twitter-timeline {
 
 .blog-page h1 {
   font-size: 3rem;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--darkBlue);
 }
@@ -1622,6 +1621,7 @@ article.post {
   text-transform: uppercase;
   color: var(--darkBlue);
   margin: 0 0 0.5rem 0;
+  font-family: 'Barlow', sans-serif;
 }
 
 .post .text {
@@ -1672,11 +1672,15 @@ article.post {
   text-decoration: underline;
 }
 
-.post-content h1, .tag-page h1 {
-  font-size: 2.25rem;
+.post-content .post-title, .tag-page h1 {
+  font-size: 2.5rem;
   color: var(--darkBlue);
   font-weight: 500;
   text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+}
+
+.post-content .post-title {
   font-family: 'Barlow', sans-serif;
 }
 
@@ -1688,11 +1692,13 @@ article.post {
 }
 
 .post-content h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  color: var(--midBlue);
 }
 
 .post-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--midBlue);
 }
 
 .post-content strong {
@@ -1758,7 +1764,7 @@ article.post {
   }
 
   .post .text .excerpt {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .post-content {
@@ -1766,8 +1772,8 @@ article.post {
     font-size: 1rem;
   }
 
-  .post-content h1, .tag-page h1 {
-    font-size: 1.25rem;
+  .post-content .post-title, .tag-page h1 {
+    font-size: 1.4rem;
   }
 
   .post-content img {

@@ -1698,7 +1698,7 @@ article.post {
 
 .post-content h3 {
   font-size: 1.1rem;
-  color: var(--midBlue);
+  color: var(--teal);
 }
 
 .post-content strong {
@@ -1779,6 +1779,14 @@ article.post {
   .post-content img {
     width: 100vw;
     margin-left: calc(-5% - 2px);
+  }
+
+  .post-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .post-content h3 {
+    font-size: 1rem;
   }
 
   .post-page {

@@ -297,6 +297,8 @@ a.button {
 button.register-button {
   min-width: 160px;
   font-family: 'Barlow', sans-serif;
+  position: relative;
+  z-index: 999999;
 }
 
 input[type='button']:hover,

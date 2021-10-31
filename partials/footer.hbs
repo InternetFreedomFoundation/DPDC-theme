@@ -1,49 +1,104 @@
 <footer class="dpdc-footer">
     <div class="top-section">
         <div class="top-section-left">
-            <div class="dpdc-logo">
-                <a class="logo" href="{{@site.url}}">
-                    {{>logo}}
-                </a>
-                <h1>Digital Patrakar<br/>Defence Clinic</h1>
-            </div>
-            <div class="buttons">
-                {{#link rel="noopener noreferrer" target="_blank" href="https://blocksurvey.io/survey/1PfQfn62JSDjjyK4nuHoY5t21wKeuocLLm/a8b7fe71-5ea4-46f8-9e67-0e007ebbc61a"}}
-                <button class="register-button">Register with us</button>
-                {{/link}}
-                <a rel="noopener noreferrer" class="twitter-button" target="_blank" rel="noopener noreferrer" href="https://twitter.com/PatrakarClinic">
-                    <i class="twitter-icon"></i>
-                    Follow @PatrakarClinic
-                </a>
+            <div class="dpdc-links">
+                <div class="dpdc-logo">
+                    <a class="logo" href="{{@site.url}}">
+                        <img src="{{asset 'assets/img/dpdcLogo.svg'}}" />
+                    </a>
+                </div>
+                <div class="align-center">
+                    {{#link class="align-center" rel="noopener noreferrer" target="_blank" href="https://twitter.com/PatrakarClinic"}}
+                        <i class="twitter-icon-darkblue"></i>
+                    {{/link}}
+                    {{#link rel="noopener noreferrer" target="_blank" href="https://blocksurvey.io/survey/1PfQfn62JSDjjyK4nuHoY5t21wKeuocLLm/a8b7fe71-5ea4-46f8-9e67-0e007ebbc61a"}}
+                    <button class="footer-register-button">Register</button>
+                    {{/link}}
+                </div>
             </div>
             <nav class="footer-nav">
                 {{navigation}}
             </nav>
+            {{!-- Mobile Viewport Footer --}}
+            <div class="dpdc-links-mobile">
+                <div class="subsection">
+                    <div class="dpdc-logo">
+                        <a class="logo" href="{{@site.url}}">
+                            <img src="{{asset 'assets/img/dpdcLogo.svg'}}" />
+                        </a>
+                    </div>
+                </div>
+                <div class="subsection">
+                    {{#link rel="noopener noreferrer" target="_blank" href="https://blocksurvey.io/survey/1PfQfn62JSDjjyK4nuHoY5t21wKeuocLLm/a8b7fe71-5ea4-46f8-9e67-0e007ebbc61a"}}
+                    <button class="footer-register-button">Register</button>
+                    {{/link}}
+                    {{#link class="align-center" rel="noopener noreferrer" target="_blank" href="https://twitter.com/PatrakarClinic"}}
+                        <i class="twitter-icon-darkblue"></i>
+                    {{/link}}
+                </div>
+            </div>
+            <nav class="footer-nav-mobile">
+                {{navigation}}
+            </nav>
         </div>
         <div class="top-section-right">
-            <div class="iff-logo">
-                {{>iffLogo black=true}}
+            <div class="iff-social-links">
+                <div class="iff-logo">
+                    {{>iffLogo black=true}}
+                </div>
+                <a rel="noopener noreferrer" href="https://github.com/internetfreedomfoundation"><i class="github-icon"></i></a>
+                <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCahIqRDjhvhuocX3BJdxfQQ">
+                    <i class="youtube-icon"></i>
+                </a>
+                <a rel="noopener noreferrer" href="https://www.instagram.com/internetfreedom.in/?hl=en">
+                    <i class="instagram-icon"></i>
+                </a>
+                <a rel="noopener noreferrer" href="https://twitter.com/internetfreedom">
+                    <i class="twitter-icon-black"></i>
+                </a>
+                    
+                {{#link rel="noopener noreferrer" target="_blank" href="https://rzp.io/l/IFFLL2019"}}
+                <button class="footer-support-button">Support Us</button>
+                {{/link}}
             </div>
             <div class="links">
-                <div class="buttons">
-                    <form>
-                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HLkgeWGQLMuddp"
-                            async> </script>
-                    </form>
-                </div>
                 <ul>
                     <li>
-                        <a rel="noopener noreferrer" href="https://www.instagram.com/internetfreedom.in/?hl=en">Instagram</a>
+                        <a rel="noopener noreferrer" href="https://internetfreedom.in/contact/">Contact</a>
                     </li>
                     <li>
-                        <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCahIqRDjhvhuocX3BJdxfQQ">YouTube</a>
+                        <a rel="noopener noreferrer" href="https://internetfreedom.in/privacy-policy/">Privacy Policy</a>
                     </li>
                     <li>
-                        <a rel="noopener noreferrer" href="https://github.com/internetfreedomfoundation">GitHub</a>
+                        <a rel="noopener noreferrer" href="https://internetfreedom.in/iff-posh-policy/">IFF PoSH Policy</a>
                     </li>
-                    <li>
-                        <a rel="noopener noreferrer" href="https://twitter.com/internetfreedom">Twitter</a>
-                    </li>
+                </ul>
+            </div>
+            {{!-- Smaller viewport footer --}}
+            <div class="iff-social-links-mobile">
+                <div class="subsection">
+                    <div class="iff-logo">
+                        {{>iffLogo black=true}}
+                    </div>
+                    {{#link rel="noopener noreferrer" target="_blank" href="https://rzp.io/l/IFFLL2019"}}
+                    <button class="footer-support-button">Support Us</button>
+                    {{/link}}
+                </div>
+                <div class="subsection" style="margin-top: 1.5rem;">
+                    <a rel="noopener noreferrer" href="https://github.com/internetfreedomfoundation"><i class="github-icon"></i></a>
+                    <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCahIqRDjhvhuocX3BJdxfQQ">
+                        <i class="youtube-icon"></i>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://www.instagram.com/internetfreedom.in/?hl=en">
+                        <i class="instagram-icon"></i>
+                    </a>
+                    <a rel="noopener noreferrer" href="https://twitter.com/internetfreedom">
+                        <i class="twitter-icon-black"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="links-mobile">
+                <ul>
                     <li>
                         <a rel="noopener noreferrer" href="https://internetfreedom.in/contact/">Contact</a>
                     </li>

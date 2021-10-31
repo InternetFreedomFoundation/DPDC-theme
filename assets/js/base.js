@@ -12,4 +12,13 @@ $(function () {
     $('.toggle-menu').toggleClass('hide');
     return false;
   });
+
+  $(document).ready(function () {
+    $('.js-testimonial-feed').slick();
+    $('.sponsors-grid').simplyScroll({
+      autoMode: 'loop',
+      pauseOnHover: false,
+      pauseOnTouch: false,
+    });
+  });
 });

@@ -1,2 +1,2 @@
-$(function(){$(".toggle-menu").click(function(e){return $(".menu").toggleClass("show"),$(".toggle-menu").toggleClass("is-active"),!1}),$(".close-menu").click(function(e){return $(".menu").toggleClass("show"),$(".close-menu").toggleClass("show"),$(".toggle-menu").toggleClass("hide"),!1})});
+$(function(){$(".toggle-menu").click(function(e){return $(".menu").toggleClass("show"),$(".toggle-menu").toggleClass("is-active"),!1}),$(".close-menu").click(function(e){return $(".menu").toggleClass("show"),$(".close-menu").toggleClass("show"),$(".toggle-menu").toggleClass("hide"),!1}),$(document).ready(function(){$(".js-testimonial-feed").slick(),$(".sponsors-grid").simplyScroll({autoMode:"loop",pauseOnHover:!1,pauseOnTouch:!1})})});
 //# sourceMappingURL=base.js.map

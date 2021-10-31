@@ -27,21 +27,39 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
 			integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
 			crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+			integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"
+			integrity="sha512-i8BU+cmsrlyKOPFSCdO4x4wHXvjg6YIXy6K/PsPL0/3F89ccSgk06wDBP5FTyiGDzVNADQhal1dA1DHH2JB0Rw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css"
+			integrity="sha512-CZQnqo63/ijblvKzNt3L1RoyIY/fmcGN/EA8azw7Q3U8zl3IlH2b7em+7xqkWss/ZYVxtZDjeLjhIunW2Rn/KQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 		{{ghost_head}}
 
 		<script src="{{asset "built/base.js"}}"></script>
 	</head>
 	<body class="{{body_class}}{{tags autolink='off'}}">
 		<header>
-			<a class="logo" href="{{@site.url}}">
-				{{>logo}}
-			</a>
-			<nav class="menu">
-				{{navigation}}
-			</nav>
+			<div class="left-container">
+				<a class="logo" href="{{@site.url}}">
+					{{>logo}}
+				</a>
+				<nav class="menu">
+					{{navigation}}
+					{{#link rel="noopener noreferrer" target="_blank"
+						href="https://rzp.io/l/IFFLL2019"}}
+							<button class="support-button-mobile">Help the Patrakar Clinic</button>
+						{{/link}}
+				</nav>
+			</div>
 			<div class="register-button-container">
+				{{#link rel="noopener noreferrer" target="_blank"
+					href="https://blocksurvey.io/survey/1PfQfn62JSDjjyK4nuHoY5t21wKeuocLLm/a8b7fe71-5ea4-46f8-9e67-0e007ebbc61a"}}
+					<button class="support-button">Help the Patrakar Clinic</button>
+				{{/link}}
 				{{#link rel="noopener noreferrer" target="_blank" href="https://blocksurvey.io/survey/1PfQfn62JSDjjyK4nuHoY5t21wKeuocLLm/a8b7fe71-5ea4-46f8-9e67-0e007ebbc61a"}}
 					<button class="register-button">Register with us</button>
 				{{/link}}
@@ -53,25 +71,6 @@
 			</div>
 		</header>
 		{{{body}}}
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
-			integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
-			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"
-			integrity="sha512-i8BU+cmsrlyKOPFSCdO4x4wHXvjg6YIXy6K/PsPL0/3F89ccSgk06wDBP5FTyiGDzVNADQhal1dA1DHH2JB0Rw=="
-			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css"
-			integrity="sha512-CZQnqo63/ijblvKzNt3L1RoyIY/fmcGN/EA8azw7Q3U8zl3IlH2b7em+7xqkWss/ZYVxtZDjeLjhIunW2Rn/KQ=="
-			crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script>
-			$('.js-testimonial-feed').slick();
-			$(".sponsors-grid").simplyScroll({
-					autoMode: 'loop',
-					pauseOnHover: false,
-					pauseOnTouch: false
-				});
-		</script>
 		{{>footer}}
 		{{ghost_foot}}
 	</body>

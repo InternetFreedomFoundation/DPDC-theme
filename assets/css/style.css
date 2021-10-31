@@ -301,6 +301,31 @@ button.register-button {
   z-index: 999999;
 }
 
+button.support-button, button.support-button-mobile {
+  min-width: 160px;
+  font-family: 'Barlow', sans-serif;
+  position: relative;
+  z-index: 999999;
+  background-color: transparent;
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+  margin-right: 1rem;
+}
+
+button.support-button-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  button.support-button-mobile {
+    display: inline-block;
+  }
+
+  button.support-button {
+    display: none;
+  }
+}
+
 input[type='button']:hover,
 input[type='submit']:hover {
   background: var(--lightBlue);
@@ -381,6 +406,12 @@ header {
   height: 5em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+header .left-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -458,16 +489,26 @@ nav.footer-nav > ul {
 nav li a {
   color: var(--darkBlue);
   display: block;
-  line-height: 1em;
+  line-height: 1rem;
   padding: 1rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
+  .menu {
+    padding: var(--pagePaddingMobile);
+  }
+
   nav > ul {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
+
+  nav li a {
+  padding: 0 0 1rem 0;
+}
 
   .logo {
     width: 45px;
@@ -644,7 +685,7 @@ nav li a {
 
 .sponsor-card {
   font-size: 1.2rem;
-  height: 72px;
+  height: 80px;
   margin-left: 3rem;
   font-family: 'Open Sans', sans-serif;
   position: relative;

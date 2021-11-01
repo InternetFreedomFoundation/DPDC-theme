@@ -670,6 +670,10 @@ nav li a {
 
 .testimonial-card {
   padding: 0 6rem;
+  min-height: 320px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonial-card:focus-visible {

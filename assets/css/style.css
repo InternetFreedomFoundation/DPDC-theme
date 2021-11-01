@@ -1677,11 +1677,13 @@ a.twitter-timeline {
 
 .dpdc-footer .top-section {
   display: flex;
+  justify-content: space-around;
 }
 
 .dpdc-footer .top-section-left,
 .dpdc-footer .top-section-right {
   width: 50%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }

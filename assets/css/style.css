@@ -577,7 +577,7 @@ nav li a {
 }
 
 .purpose .graphic {
-  width: 55%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   padding: 1rem 0 0 0;
@@ -590,7 +590,7 @@ nav li a {
 }
 
 .purpose .graphic div {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

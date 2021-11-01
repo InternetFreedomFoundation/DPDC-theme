@@ -569,20 +569,35 @@ nav li a {
   justify-content: space-between;
 }
 
-.purpose .image {
-  padding: 1rem 0 0 0;
-  width: 55%;
-  display: flex;
+.purpose h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-.purpose .image div {
-  width: 100%;
-  min-height: 300px;
-  background-color: var(--lightGrey);
-  color: var(--darkGrey);
+.purpose .graphic {
+  width: 55%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0 0 0;
+}
+
+.purpose .graphic span {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2rem;
+}
+
+.purpose .graphic div {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.purpose .graphic img {
+  margin-left: -15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -591,14 +606,27 @@ nav li a {
     flex-direction: column-reverse;
   }
 
+  .purpose h1 {
+    font-size: 2rem;
+  }
+
   .purpose .copy,
-  .purpose .images {
+  .purpose .graphic {
     width: 100%;
   }
 
   .purpose .copy {
     margin: 2rem 0 0 0;
     font-size: 0.9rem;
+  }
+
+  .purpose .graphic span {
+    font-size: 0.9rem;
+  }
+
+  .purpose .graphic div {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 /* Purpose Section End */

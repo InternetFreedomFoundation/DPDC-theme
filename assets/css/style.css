@@ -308,8 +308,7 @@ button.support-button, button.support-button-mobile {
   font-family: 'Barlow', sans-serif;
   position: relative;
   z-index: 999999;
-  background-color: transparent;
-  border: 1px solid var(--darkBlue);
+  background-color: var(--white);
   color: var(--darkBlue);
   margin-right: 1rem;
 }
@@ -318,12 +317,12 @@ button.support-button-white {
   min-width: 160px;
   width: 100%;
   margin-top: 2rem;
+  height: 52px;
   font-family: 'Barlow', sans-serif;
   position: relative;
   z-index: 999999;
-  background-color: transparent;
-  border: 1px solid var(--white);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--darkBlue);
   margin-right: 1rem;
 }
 
@@ -534,7 +533,7 @@ nav li a {
 /* Purpose Section */
 .purpose {
   width: 100%;
-  background-color: var(--midGrey);
+  background-color: var(--darkBlue);
   color: var(--white);
   padding: var(--pagePadding);
   display: flex;
@@ -549,15 +548,14 @@ nav li a {
   line-height: 2rem;
 }
 
-.purpose .images {
+.purpose .image {
   padding: 1rem 0 0 0;
   width: 55%;
   display: flex;
-  justify-content: space-between;
 }
 
-.purpose .images div {
-  width: 30%;
+.purpose .image div {
+  width: 100%;
   min-height: 300px;
   background-color: var(--lightGrey);
   color: var(--darkGrey);
@@ -753,9 +751,11 @@ nav li a {
 .sponsor-card {
   font-size: 1.2rem;
   height: 80px;
-  margin-left: 3rem;
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sponsor-card img {
@@ -763,7 +763,7 @@ nav li a {
   height: 100%;
   object-fit: contain;
   display: block;
-  margin-left: 2.5rem;
+  margin: 0 auto;
 }
 
 .sponsors-title {
@@ -790,6 +790,46 @@ nav li a {
 /* Sponsors Section End */
 
 /* Hero Section */
+
+.lined-circle {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 100px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 60%;
+}
+
+.lined-circle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  .lined-circle {
+    top: 65%;
+  }
+
+  .lined-circle svg {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  .lined-circle {
+    top: 70%;
+  }
+
+  .lined-circle svg {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .lined-circle {
+    display: none;
+  }
+}
 
 .hero-section {
   display: flex;
@@ -1291,7 +1331,7 @@ nav li a {
 }
 
 .protecting-journalists .copy .cta a {
-  width: 360px;
+  width: 100%;
   font-size: 1.5rem;
   margin-top: 2rem;
 }

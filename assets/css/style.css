@@ -1750,10 +1750,9 @@ a.twitter-timeline {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   width: 75%;
-  margin: auto;
+  margin: 2rem auto 1rem auto;
   line-height: 2rem;
   text-align: center;
-  margin-top: 2rem;
 }
 
 .dpdc-footer .bottom-section a {
@@ -2147,6 +2146,30 @@ nav.pagination a.older-posts {
 .banner a:hover {
   color: var(--lightBlue);
 }
+.support-banner {
+  width: 100%;
+  min-height: 200px;
+  padding: 2rem 5% 2rem 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: rgba(217, 217, 217, 0.3);
+  background-image: url(/assets/img/support.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.support-banner p {
+  color: var(--darkGrey);
+}
+.support-banner a {
+  color: var(--darkGrey);
+}
+.support-banner a:hover {
+  color: var(--midGrey);
+}
 .share-buttons {
   background-color: var(--darkBlue);
   font-family: 'Open Sans', sans-serif;
@@ -2167,6 +2190,11 @@ nav.pagination a.older-posts {
 @media screen and (max-width: 768px) {
   .banner {
     padding: 20px 5%;
+  }
+  .support-banner {
+    padding: 20px 5%;
+    background-image: none;
+    min-height: none;
   }
 }
 @media screen and (max-width: 580px) {

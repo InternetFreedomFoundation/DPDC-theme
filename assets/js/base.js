@@ -15,10 +15,27 @@ $(function () {
 
   $(document).ready(function () {
     $('.js-testimonial-feed').slick();
-    $('.sponsors-grid').simplyScroll({
-      autoMode: 'loop',
-      pauseOnHover: false,
-      pauseOnTouch: false,
+    $('.sponsors-grid').slick({
+      arrows: false,
+      speed: 5000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      swipeToSlide: true,
+      centerMode: true,
+      focusOnSelect: true,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
   });
 });

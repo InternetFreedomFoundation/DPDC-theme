@@ -763,9 +763,8 @@ nav li a {
 }
 
 .sponsors-grid {
-  display: flex;
+  display: flex !important;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   width: 100vw !important;
 }
 
@@ -776,8 +775,9 @@ nav li a {
 
 .sponsor-card {
   font-size: 1.2rem;
-  height: 80px;
+  height: 80px !important;
   font-family: 'Open Sans', sans-serif;
+  margin-left: 8rem;
   position: relative;
   display: flex;
   justify-content: center;

@@ -28,14 +28,11 @@ $(function () {
       centerMode: true,
       focusOnSelect: true,
       variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+      swipe: false,
+      touchMove: false,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      draggable: false,
     });
   });
 });

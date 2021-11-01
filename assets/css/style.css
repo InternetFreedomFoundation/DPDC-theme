@@ -945,9 +945,9 @@ nav li a {
 }
 
 .hero-section .hero-image img {
-  width: 95%;
+  width: 90%;
   height: auto;
-  margin-top: 11rem;
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 960px) {

@@ -424,8 +424,8 @@ body {
 header {
   width: 100%;
   background: transparent;
-  padding: 3em;
-  height: 5em;
+  padding: 3rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -569,20 +569,35 @@ nav li a {
   justify-content: space-between;
 }
 
-.purpose .image {
-  padding: 1rem 0 0 0;
-  width: 55%;
-  display: flex;
+.purpose h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-.purpose .image div {
-  width: 100%;
-  min-height: 300px;
-  background-color: var(--lightGrey);
-  color: var(--darkGrey);
+.purpose .graphic {
+  width: 45%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0 0 0;
+}
+
+.purpose .graphic span {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2rem;
+}
+
+.purpose .graphic div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.purpose .graphic img {
+  margin-left: -15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -591,14 +606,27 @@ nav li a {
     flex-direction: column-reverse;
   }
 
+  .purpose h1 {
+    font-size: 2rem;
+  }
+
   .purpose .copy,
-  .purpose .images {
+  .purpose .graphic {
     width: 100%;
   }
 
   .purpose .copy {
     margin: 2rem 0 0 0;
     font-size: 0.9rem;
+  }
+
+  .purpose .graphic span {
+    font-size: 0.9rem;
+  }
+
+  .purpose .graphic div {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 /* Purpose Section End */
@@ -670,6 +698,10 @@ nav li a {
 
 .testimonial-card {
   padding: 0 6rem;
+  min-height: 320px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonial-card:focus-visible {
@@ -759,9 +791,8 @@ nav li a {
 }
 
 .sponsors-grid {
-  display: flex;
+  display: flex !important;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   width: 100vw !important;
 }
 
@@ -772,8 +803,9 @@ nav li a {
 
 .sponsor-card {
   font-size: 1.2rem;
-  height: 80px;
+  height: 80px !important;
   font-family: 'Open Sans', sans-serif;
+  margin-left: 8rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -873,6 +905,7 @@ nav li a {
 
 .hero-section .title {
   font-weight: 600;
+  margin-top: 0;
   font-size: 4rem;
   color: var(--darkBlue);
   text-transform: uppercase;
@@ -912,9 +945,21 @@ nav li a {
 }
 
 .hero-section .hero-image img {
-  width: 95%;
+  width: 90%;
   height: auto;
-  margin-top: 11rem;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-section .title {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section .title {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px), screen and (max-height: 650px) {
@@ -1519,7 +1564,7 @@ nav li a {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .protecting-journalists .infographic {
     width: 75%;
     margin: 2rem auto 0 auto;
@@ -2066,7 +2111,30 @@ nav.pagination a.older-posts {
   float: right;
 }
 
+.register-button-container {
+    display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .register-button-container {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .register-button-container a, .register-button-container button {
+    width: 100%;
+  }
+
+  .register-button-container a:not(:first-child){
+    margin-top: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .register-button-container {
+    padding-top: 0;
+  }
+
   .wrapper {
     flex-direction: column;
   }
@@ -2113,7 +2181,7 @@ nav.pagination a.older-posts {
     background-color: var(--white);
     color: var(--teal);
     position: absolute;
-    top: 5em;
+    top: 5rem;
     left: 0;
     transition: all 0.2s;
     z-index: 999;

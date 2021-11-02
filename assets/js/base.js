@@ -15,10 +15,24 @@ $(function () {
 
   $(document).ready(function () {
     $('.js-testimonial-feed').slick();
-    $('.sponsors-grid').simplyScroll({
-      autoMode: 'loop',
+    $('.sponsors-grid').slick({
+      arrows: false,
+      speed: 5000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      swipeToSlide: true,
+      centerMode: true,
+      focusOnSelect: true,
+      variableWidth: true,
+      swipe: false,
+      touchMove: false,
       pauseOnHover: false,
-      pauseOnTouch: false,
+      pauseOnFocus: false,
+      draggable: false,
     });
   });
 });

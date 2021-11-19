@@ -2015,12 +2015,17 @@ article.post {
 
 .post-content form {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .post-content .razorpay-subscription-button {
   min-width: unset;
   max-width: unset;
   width: 100%;
+}
+
+.post-content figure {
+  margin: 0;
 }
 
 .post-tags a {

@@ -1943,8 +1943,8 @@ article.post {
 .post img {
   width: 30%;
   height: 160px;
-  margin: 0 0 0 1rem;
-  object-fit: cover;
+  margin: 0 0 0 2rem;
+  object-fit: contain;
   object-position: center center;
 }
 
@@ -1959,6 +1959,10 @@ article.post {
   width: 60%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
+}
+
+.post-content .post-date {
+  margin-bottom: 0.5rem;
 }
 
 .post-content img {
@@ -2138,7 +2142,7 @@ nav.pagination a.older-posts {
 }
 
 .register-button-container {
-    display: flex;
+  display: flex;
 }
 
 @media screen and (max-width: 960px) {
@@ -2147,11 +2151,12 @@ nav.pagination a.older-posts {
     padding-top: 1rem;
   }
 
-  .register-button-container a, .register-button-container button {
+  .register-button-container a,
+  .register-button-container button {
     width: 100%;
   }
 
-  .register-button-container a:not(:first-child){
+  .register-button-container a:not(:first-child) {
     margin-top: 0.5rem;
   }
 }
@@ -2161,7 +2166,7 @@ nav.pagination a.older-posts {
     padding-top: 0;
   }
 
-  .register-button-container a:not(:first-child){
+  .register-button-container a:not(:first-child) {
     margin-top: 0;
   }
 

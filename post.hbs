@@ -8,8 +8,8 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
 <main class="post-page">
   <article class="post-content">
-      <div class="post-date">{{date format="DD MMMM YYYY"}}</div>
       <h1 class="post-title">{{ title }}</h1>
+      <div class="post-date">{{date format="DD MMMM YYYY, hh:mm a"}}</div>
       {{#if feature_image}}
         <img class="post-image lazyload u-object-fit" {{#if feature_image}} data-srcset="{{img_url feature_image size=" 1x"}}
           1x, {{img_url feature_image size="2x" }} 2x, {{img_url feature_image size="3x" }} 3x" {{/if}} src={{img_url

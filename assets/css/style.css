@@ -1721,6 +1721,14 @@ a.twitter-timeline {
   height: 60px;
 }
 
+.dpdc-footer .iff-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dpdc-footer .top-section {
   display: flex;
   justify-content: space-around;
@@ -1837,6 +1845,10 @@ a.twitter-timeline {
 
   .dpdc-footer .top-section-right {
     margin-top: 2rem;
+  }
+
+  .dpdc-footer .iff-details .iff-address {
+    font-size: 0.75rem;
   }
 
   .dpdc-logo {

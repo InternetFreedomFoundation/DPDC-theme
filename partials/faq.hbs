@@ -1,0 +1,15 @@
+{{#get "posts" filter="tags:faq" limit="all" as |faqs|}}
+  {{#if faqs}}
+    <div class="faqs">
+      <h1 class="heading">FAQs</h1>
+        {{#foreach faqs visibility="all"}}
+            <button class="accordion">{{ title }}</button>
+              <div class="accordion-content">
+                <div class="faq-item">
+                  {{ content }}
+                </div>
+              </div>
+        {{/foreach}}
+    </div>
+  {{/if}}
+{{/get}}

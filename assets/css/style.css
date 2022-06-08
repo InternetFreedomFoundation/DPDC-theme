@@ -2536,6 +2536,7 @@ table tbody td {
 
 /* FAQ Accordion */
  button.accordion {
+   display: flex;
    width: 100%;
    background-color: var(--midBlue);
    font-weight: 500;
@@ -2544,6 +2545,7 @@ table tbody td {
    outline: none;
    text-align: left;
    font-size: 2rem;
+   line-height: 2rem;
    padding: 1.5rem;
    height: auto;
    border-radius: 0;

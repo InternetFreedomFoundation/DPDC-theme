@@ -1,4 +1,4 @@
-{{#get "posts" filter="tags:faq" limit="all" as |faqs|}}
+{{#get "posts" filter="tags:faq" limit="all" order="published_at asc" as |faqs|}}
   {{#if faqs}}
     <div class="faqs">
       <h1 class="heading">FAQs</h1>

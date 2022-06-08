@@ -1200,11 +1200,20 @@ nav li a {
   line-height: 2rem;
   text-transform: uppercase;
 }
+.register-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
 .step-container {
   color: var(--darkBlue);
   margin: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 9fr;
+}
+.step-container.last {
+  margin: 3rem 0 0 0;
 }
 .step-count {
   display: flex;

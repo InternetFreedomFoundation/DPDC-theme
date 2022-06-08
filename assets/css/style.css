@@ -1009,7 +1009,7 @@ nav li a {
 /* Contact Page */
 
 .contact-section {
-  margin: 0 5%;
+  margin: 0 8%;
   width: 50%;
 }
 .contact-section .heading {
@@ -2518,3 +2518,87 @@ table tbody td {
   background: transparent 0 0 no-repeat;
   background-image: url('/assets/img/youtube.svg');
 }
+
+/* FAQ section */
+
+.faqs {
+  width: '100%';
+}
+
+.faqs .heading {
+  margin: 0 0 2rem 8%;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--darkBlue);
+  line-height: 4.75rem;
+}
+
+/* FAQ Accordion */
+ button.accordion {
+   width: 100%;
+   background-color: var(--midBlue);
+   font-weight: 500;
+   text-transform: uppercase;
+   border: none;
+   outline: none;
+   text-align: left;
+   font-size: 2rem;
+   padding: 1.5rem;
+   height: auto;
+   border-radius: 0;
+   color: var(--white);
+   cursor: pointer;
+   transition: background-color 0.2s linear;
+ }
+
+ button.accordion:before {
+   font-family: FontAwesome;
+   content: "\f078";
+   font-family: "fontawesome";
+   font-size: 1.5rem;
+   float: left;
+   margin-left: 4rem;
+   margin-right: 0.5rem;
+ }
+
+ button.accordion.is-open:before {
+   content: "\f077";
+ }
+
+ button.accordion:hover,
+ button.accordion.is-open {
+   background-color: var(--darkBlue);
+ }
+
+ .accordion-content {
+   background-color: var(--teal);
+   border-top: 2px solid var(--white);
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-in-out;
+   font-family: 'Open Sans', sans-serif;
+ }
+
+ .accordion-content .faq-item {
+    padding: 2rem 6rem;
+ }
+
+ .accordion-content * {
+   color: var(--white);
+   font-size: 1.5rem;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .faqs .heading {
+     margin: 0 0 2rem 5%;
+   }
+
+   button.accordion:before {
+     margin-left: 1rem;
+   }
+
+  .accordion-content .faq-item {
+    padding: 2rem 4rem;
+  }
+ }

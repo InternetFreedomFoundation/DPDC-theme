@@ -1206,6 +1206,9 @@ nav li a {
   justify-content: center;
   padding: 1rem;
 }
+.register-cta button {
+  font-size: 1.5rem;
+}
 .step-container {
   color: var(--darkBlue);
   margin: 3rem 0;

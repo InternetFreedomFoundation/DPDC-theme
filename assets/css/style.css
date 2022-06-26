@@ -2595,7 +2595,8 @@ table tbody td {
 
  .accordion-content * {
   color: var(--darkGrey);
-   font-size: 1.5rem;
+  font-size: 1.5rem;
+  word-break: break-word;
  }
 
  .accordion-content strong {

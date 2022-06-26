@@ -1042,6 +1042,27 @@ nav li a {
 .contact-section .subtitle a:hover {
   color: var(--lightBlue);
 }
+
+.events {
+  width: 100%;
+  padding: 2rem 6rem;
+  background-color: var(--lightBlue);
+  text-align: center;
+}
+
+.events h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.events * {
+  color: var(--white)
+}
+
+.event-image {
+  max-width: calc(100% - 2rem);
+}
+
 @media screen and (max-width: 768px) {
   .contact-section {
     margin: 0;

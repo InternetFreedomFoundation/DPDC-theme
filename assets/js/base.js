@@ -15,6 +15,9 @@ $(function () {
 
   $(document).ready(function () {
     $('.js-testimonial-feed').slick();
+    $('.js-event-feed').slick({
+      slidesToShow: 2,
+    });
     $('.sponsors-grid').slick({
       arrows: false,
       speed: 5000,

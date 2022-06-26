@@ -2616,8 +2616,4 @@ table tbody td {
    button.accordion:before {
      margin-left: 1rem;
    }
-
-  .accordion-content .faq-item {
-    padding: 2rem;
-  }
  }

@@ -2534,16 +2534,15 @@ table tbody td {
 /* FAQ section */
 
 .faqs {
-  width: 100%;
+  margin: 0 8%;
 }
 
 .faqs .heading {
-  margin: 0 0 2rem 8%;
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 3rem;
   color: var(--darkBlue);
-  line-height: 4.75rem;
+  line-height: 3.5rem;
 }
 
 /* FAQ Accordion */
@@ -2572,7 +2571,7 @@ table tbody td {
    font-family: "fontawesome";
    font-size: 1.5rem;
    float: left;
-   margin-left: 6rem;
+   margin-left: 0.5rem;
    margin-right: 0.5rem;
  }
 
@@ -2586,7 +2585,7 @@ table tbody td {
  }
 
  .accordion-content {
-   background-color: var(--teal);
+   background-color: var(--white);
    border-top: 2px solid var(--white);
    max-height: 0;
    overflow: hidden;
@@ -2594,13 +2593,13 @@ table tbody td {
    font-family: 'Open Sans', sans-serif;
  }
 
- .accordion-content .faq-item {
-    padding: 2rem 6rem;
+ .accordion-content * {
+  color: var(--darkGrey);
+   font-size: 1.5rem;
  }
 
- .accordion-content * {
-   color: var(--white);
-   font-size: 1.5rem;
+ .accordion-content strong {
+  color: var(--midBlue);
  }
 
  @media screen and (max-width: 1200px) {

@@ -38,8 +38,14 @@ $(function () {
     // FAQ Accordion
     const accordionBtns = document.querySelectorAll(".accordion");
 
-    accordionBtns.forEach((accordion) => {
+    accordionBtns.forEach((accordion, i) => {
       accordion.onclick = function () {
+        accordionBtns.forEach((btn, j) => {
+          if (i !== j) {
+            btn.classList.remove("is-open");
+            btn.nextElementSibling.style.maxHeight = null;
+          }
+        })
         this.classList.toggle("is-open");
 
         let content = this.nextElementSibling;

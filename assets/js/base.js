@@ -17,6 +17,14 @@ $(function () {
     $('.js-testimonial-feed').slick();
     $('.js-event-feed').slick({
       slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
     $('.sponsors-grid').slick({
       arrows: false,

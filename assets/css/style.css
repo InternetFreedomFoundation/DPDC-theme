@@ -1060,7 +1060,13 @@ nav li a {
 }
 
 .event-image {
-  max-width: calc(100% - 2rem);
+  max-width: 350px;
+}
+
+.event-card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1068,6 +1074,23 @@ nav li a {
     margin: 0;
     padding: 0 5%;
     width: 100%;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .events {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .event-image {
+    max-width: 75%;
   }
 }
 /* Contact Page End */

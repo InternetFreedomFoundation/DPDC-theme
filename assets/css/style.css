@@ -635,6 +635,43 @@ nav li a {
 .testimonials-wrapper {
   width: 100%;
   padding: var(--pagePadding);
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-wrapper .stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-wrapper .stats :not(:first-child) {
+  margin-top: 3rem;
+}
+
+.testimonials-wrapper .stats .card {
+  min-width: 165px;
+}
+
+.testimonials-wrapper .stats .card p, .testimonials-wrapper .stats .card h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.testimonials-wrapper .stats .card h3 {
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.testimonials-wrapper .stats .card {
+  background-color: var(--midBlue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
 }
 
 .testimonials {
@@ -748,6 +785,20 @@ nav li a {
 
   .slick-next {
     right: 0;
+  }
+
+  .testimonials-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .testimonials-wrapper .stats {
+    flex-direction: row;
+    padding: var(--pagePaddingMobile);
+  }
+
+  .testimonials-wrapper .stats :not(:first-child) {
+    margin-top: 0;
+    margin-left: 1rem;
   }
 
   .testimonial {

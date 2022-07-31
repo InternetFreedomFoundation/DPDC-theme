@@ -15,6 +15,32 @@
                 {{/foreach}}
             </div>
         </div>
+        <div class="stats">
+            {{#get "posts" filter="tags:clinics-held" limit="all" as |clinicsHeld|}}
+                {{#if clinicsHeld}}
+                    {{#foreach clinicsHeld visibility="all"}}
+                        {{#if @first}}
+                            <div class="card">
+                                <h3>{{content}}</h3>
+                                <p>Clinics held</p>
+                            </div>
+                        {{/if}}
+                    {{/foreach}}
+                {{/if}}
+            {{/get}}
+            {{#get "posts" filter="tags:journalists-helped" limit="all" as |journalistsHelped|}}
+                {{#if journalistsHelped}}
+                    {{#foreach journalistsHelped visibility="all"}}
+                        {{#if @first}}
+                            <div class="card">
+                                <h3>{{content}}</h3>
+                                <p>Journalists helped</p>
+                            </div>
+                        {{/if}}
+                    {{/foreach}}
+                {{/if}}
+            {{/get}}
+        </div>
     </div>
     {{/if}}
 {{/get}}

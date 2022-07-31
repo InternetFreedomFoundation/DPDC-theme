@@ -1069,6 +1069,11 @@ nav li a {
   align-items: center;
 }
 
+.events .slick-track {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .contact-section {
     margin: 0;
